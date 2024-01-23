@@ -9,3 +9,10 @@
   .productInput {
    @apply flex flex-col space-y-2
   }
+table th{
+  @apply text-rose-700
+}
+
+  table th,  table td {
+    @apply border border-pink-500 text-center
+  }

@@ -19,13 +19,13 @@ const Login = () => {
   const validation = (value) => {
     let err = {};
     if (!value.username) {
-      err = { ...err, username: "username needed" };
+      err = { ...err, username: "Username needed" };
     } else if(value.username.length < 5)
     {
-      err = {...err, username:"Minimum length 5"}
+      err = {...err, username:"Minimum length 5"};
     }
     if (!value.password) {
-      err = { ...err, password: "password needed" };
+      err = { ...err, password: "Password needed" };
     } else if (
       !/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(
         value?.password)
@@ -59,7 +59,7 @@ const Login = () => {
       };
     });
   };
-const [password, setPassword] = useState("");
+// const [password, setPassword] = useState("");
 // const [visible, setVisible] = useState(true);
 
   return (
@@ -71,10 +71,11 @@ const [password, setPassword] = useState("");
         <h1 className="text-center font-bold text-2xl text-rose-600">Login page</h1>
         <div className="mt-4 space-y-2">
           <div className="flex flex-col space-y-2">
-            <label htmlFor="">Username</label>
+            <label htmlFor="username">Username</label>
             <input
               onChange={handleChange}
               value={inputData?.username}
+              
               type="text"
               name="username"
               className="border rounded-md px-4 py-2 shadow outline-none"
@@ -82,9 +83,10 @@ const [password, setPassword] = useState("");
             <p className="text-red-500">{error?.username}</p>
           </div>
           <div className="productInput">
-            <label htmlFor="">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               onChange={handleChange}
+              
               value={inputData?.password}
               type="password"
               name="password"

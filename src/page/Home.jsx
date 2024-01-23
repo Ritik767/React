@@ -4,7 +4,7 @@ import Sidebar from "../components/static/Sidebar"
 import Counter from "../components/counter/Counter"
 import AddProducts from "../components/addProduct/AddProducts";
 import Product from "../components/product/Product"
-// import Addproduct from "../components/addProduct/AddProduct"
+import AddProduct from "../components/addProduct/AddProduct"
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} />
       <div className="px-[5%] py-10">
         <Product />
-        {/* <Addproduct/> */}
+        <AddProduct/>
         <AddProducts/>
 
         {/* <div className="productInput">

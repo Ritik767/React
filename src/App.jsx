@@ -1,6 +1,6 @@
 
 import "./App.css";
-// import Home from "./page/Home";
+import Home from "./page/Home";
 import Login from "./page/Login"
 
 const App = ()=> {
@@ -9,7 +9,7 @@ const App = ()=> {
   // const [email, setEmail] = useState("");
   return (
     <main>
-     {/* <Home/> */}
+     <Home/>
      <Login/>
     </main>
   );
