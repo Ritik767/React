@@ -1,17 +1,17 @@
-import { useState } from "react";
-import Navbar from "../components/static/Nav" 
-import Sidebar from "../components/static/Sidebar"
+// import { useState } from "react";
+// import Navbar from "../components/static/Nav" 
+// import Sidebar from "../components/static/Sidebar"
 import Counter from "../components/counter/Counter"
 import AddProducts from "../components/addProduct/AddProducts";
 import Product from "../components/product/Product"
 import AddProduct from "../components/addProduct/AddProduct"
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-     <Navbar setIsOpen={setIsOpen} />
-      <Sidebar isOpen={isOpen} />
+     {/* <Navbar setIsOpen={setIsOpen} />
+      <Sidebar isOpen={isOpen} /> */}
       <div className="px-[5%] py-10">
         <Product />
         <AddProduct/>
